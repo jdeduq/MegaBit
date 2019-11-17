@@ -1,6 +1,10 @@
 import serial
 import io
-import time
+from datetime import datetime, date, time
+
+now = datetime.now()
+strNow = now.strftime("%A %d. %B %Y %I:%M%P")
+
 
 ''' 
 mb0 = serial.Serial('/dev/cu.usbmodem14134702', 115200)
